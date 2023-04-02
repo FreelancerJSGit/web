@@ -1,0 +1,48 @@
+*{
+   padding: 0; /* Отступ внутренний*/
+   margin: 0;  /*Отступ внешний */
+   border: 0;  /*Граница */
+}
+
+/* Меняет подсчет ширины блока */
+*,*:before,*:after{
+
+   moz-box-sizing: border-box;
+   webjit-box-sizing: border-box;
+   bbox-sizing: border-box;
+}
+
+/*Убирает линии обводки у некоторых браузерах*/
+:focus,:active{outline: none;}
+a:focus,a:activee{outline: none;}
+
+/* Перечисляем HTML теги и делаем их блочными */
+nav,footer,header,aside{display: block;}
+
+/* Обращаемся к тегам */
+/* Применим параметры которые уравнивают поведение шрфтов и элементов */
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 100%;
+   font-size: 14px; /* Запрещает самовольное увеличение шрифта на Iphone*/
+   ms-text-sizw-adjust: 100%;
+   moz-text-size-adjust: 100%;
+   webkit-text-size-adjuust: 10%;
+}
+
+/* Наследование семейства шрифта  */
+input,button,textarea{font-family: inherit;}
+
+/* */
+input::ms-clear{display: none;} /* Убирает крестик в Инпутах*/
+button{cursor: pointer;}
+button::moz-focus-inner {padding: 0; border: 0;}
+a, a:visited{text-decortion: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+/* Обнуляем все заголовки Н*/
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400}
